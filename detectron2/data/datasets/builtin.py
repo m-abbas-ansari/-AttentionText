@@ -46,6 +46,10 @@ _PREDEFINED_SPLITS_COCO["coco"] = {
     "coco_2017_test": ("coco/test2017", "coco/annotations/image_info_test2017.json"),
     "coco_2017_test-dev": ("coco/test2017", "coco/annotations/image_info_test-dev2017.json"),
     "coco_2017_val_100": ("coco/val2017", "coco/annotations/instances_val2017_100.json"),
+
+    #added to defaults
+    "synth_train":("synth/train_images", "synth/train.json"),
+    "synth_val":("synth/val_images", "synth/val.json")
 }
 
 _PREDEFINED_SPLITS_COCO["coco_person"] = {
@@ -103,7 +107,7 @@ _PREDEFINED_SPLITS_COCO_PANOPTIC = {
 }
 
 
-def register_all_coco(root):
+def register_all_coco(root='./datasets'):
     for dataset_name, splits_per_dataset in _PREDEFINED_SPLITS_COCO.items():
         for key, (image_root, json_file) in splits_per_dataset.items():
             # Assume pre-defined datasets live in `./datasets`.
