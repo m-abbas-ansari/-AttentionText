@@ -48,8 +48,8 @@ _PREDEFINED_SPLITS_COCO["coco"] = {
     "coco_2017_val_100": ("coco/val2017", "coco/annotations/instances_val2017_100.json"),
 
     #added to defaults
-    "synth_train":("synth/train_images", "synth/train.json"),
-    "synth_val":("synth/val_images", "synth/val.json")
+    "synth_train":("sm_dataset/train", "sm_dataset/train.json"),
+    "synth_val":("sm_dataset/val", "sm_dataset/val.json")
 }
 
 _PREDEFINED_SPLITS_COCO["coco_person"] = {

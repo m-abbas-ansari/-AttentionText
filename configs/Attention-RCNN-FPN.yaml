@@ -71,4 +71,4 @@ INPUT:
   MAX_SIZE_TEST: 1500
 VERSION: 2
 
-OUTPUT_DIR: "./out_dir_r101/base_model/"
+OUTPUT_DIR: "./out_dir_r101/attention_model/"
